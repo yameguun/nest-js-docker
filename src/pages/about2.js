@@ -16,7 +16,7 @@ export default function About(props) {
         <div className={styles.parent}>
         {props.products.map((product)=>{
           return (
-            <div className={styles.child}>
+            <div className={styles.child} key={product.id}>
               <Image src={product.image} width={150} height={150} />
             </div>
           )
