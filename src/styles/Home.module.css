@@ -12,20 +12,33 @@
   align-items: center;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
+}
+
+.about {
+  margin-top: 10px;
+}
+
+.about > a {
+  font-size: 20px;
+}
+
+.parent {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.child {
+  margin: 5px;
+  width: 150px;
+}
+
+@media screen and (max-width: 400px) {
+  .parent {
+    display: block;
+  }
 }
