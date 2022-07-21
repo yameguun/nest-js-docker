@@ -5,7 +5,7 @@ export default function Products({ post }) {
   return (
     <div>
       <Head>
-        <title>SSR</title>
+        <title>{post.name}</title>
         <meta name="description" content="ただのAboutページだよ" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
