@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function About(props) {
@@ -17,7 +18,11 @@ export default function About(props) {
         {props.products.map((product)=>{
           return (
             <div className={styles.child} key={product.id}>
-              <Image src={product.image} width={150} height={150} />
+              <Link href={`/products/${product.id}`}>
+                <a>
+                  <Image src={product.image} width={150} height={150} />
+                </a>
+              </Link>
             </div>
           )
         })}
